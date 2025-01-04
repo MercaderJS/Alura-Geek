@@ -7,55 +7,51 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="flexbox.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&display=swap" rel="stylesheet">
 
 </head>
 <body>
     <!-- encabezado -->
     <header class="encabezado__container"> 
-        <img src="./assets/Logo.svg" alt="Logo de Alura Geek">
+        <img src="./assets/Logo.svg" alt="Logo de Alura Geek" class="encabezado__logo">
     </header>
 
-    <main>
+    <main class="main__container">
         <!-- seccion de productos -->
-        <section>
+        <section class="productos__container">
             <h2> MIS PRODUCTOS</h2>
-        <ul>
-            <div>
-                <li>
-                    <img src="./assets/image 2.svg" alt="">
-                    <p>Producto 1</p>
-                    <p>$100.00</p>
-                    <button><img src="./assets/Vector.svg" alt="boton para borrar articulo"></button>
-                </li>
-            </div>
-            <div>
-                <li>
-                    <img src="./assets/image 2.svg" alt="">
-                    <p>Producto 1</p>
-                    <p>$100.00</p>
-                    <button><img src="./assets/Vector.svg" alt="boton para borrar articulo"></button>
-                </li>
-            <div>
-                <li>
-                    <img src="./assets/image 2.svg" alt="">
-                    <p>Producto 1</p>
-                    <p>$100.00</p>
-                    <button><img src="./assets/Vector.svg" alt="boton para borrar articulo"></button>
-                </li>
-            </div>
-            <div>
-                <li>
-                    <img src="./assets/image 2.svg" alt="">
-                    <p>Producto 1</p>
-                    <p>$100.00</p>
-                    <button><img src="./assets/Vector.svg" alt="boton para borrar articulo"></button>
-                </li>
-            </div>
+        <ul class="productos__lista">
+            <li class="productos__item">
+                <img src="./assets/image 2.svg" alt="">
+                <p>Producto 1</p>
+                <p>$100.00</p>
+                <button><img src="./assets/Vector.svg" alt="boton para borrar articulo"></button>
+            </li>
+            <li class="productos__item">
+                <img src="./assets/image 2.svg" alt="">
+                <p>Producto 1</p>
+                <p>$100.00</p>
+                <button><img src="./assets/Vector.svg" alt="boton para borrar articulo"></button>
+            </li>
+            <li class="productos__item">
+                <img src="./assets/image 2.svg" alt="">
+                <p>Producto 1</p>
+                <p>$100.00</p>
+                <button><img src="./assets/Vector.svg" alt="boton para borrar articulo"></button>
+            </li>
+            <li class="productos__item">
+                <img src="./assets/image 2.svg" alt="">
+                <p>Producto 1</p>
+                <p>$100.00</p>
+                <button><img src="./assets/Vector.svg" alt="boton para borrar articulo"></button>
+            </li>
         </ul>
         </section>
 
         <!-- seccion añadir productos -->
-        <section>
+        <section class="formulario">
         <h2>AÑADIR PRODUCTOS</h2>
         <form action="">
             <input type="text" placeholder="nombre del producto ej. Celular">
@@ -68,7 +64,7 @@
     </main>
 
     <!--pie de pagina-->
-    <footer>
+    <footer class="footer__container">
         <img src="./assets/Logo.svg" alt="">
         <p>&copy; 2023 Alura Geek. Todos los derechos reservados.</p>
         <p>Desarrollado por Enmanuel Segura</p>
