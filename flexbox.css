@@ -64,8 +64,7 @@ img{
     padding-left: .86%;
     padding-top: .86%;
     margin-bottom:10%;
-    height: 43%;
-    
+    height: auto;    
 }
 
 /* descripcion de los productos */
@@ -75,7 +74,7 @@ img{
     align-items: center;
     justify-content: center;
     gap: 45%;
-    
+    margin-bottom: .3rem;
 }
 
 
@@ -135,6 +134,8 @@ img{
     display: flex;
     justify-content: center;
     height: 10rem;
+    position: absolute;
+    width: 100%;
 }
 
 /* contenido dentro del footer */
