@@ -51,7 +51,6 @@ img{
 /* contenedor de lista de productos */
 .productos__lista{
     padding-top: 5%;
-    padding-left:;
     display: flex;
     flex-flow: row wrap;
     gap: .5rem;
@@ -61,11 +60,22 @@ img{
 
 /* contenedor individual de productos */
 .productos__item{
-    border: #050000 4px solid;
     width: 30%;
     padding-left: .86%;
     padding-top: .86%;
     margin-bottom:10%;
+    height: 43%;
+    
+}
+
+/* descripcion de los productos */
+.detalles__productos{
+    margin-top: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45%;
+    
 }
 
 
@@ -190,6 +200,7 @@ img{
     .productos__item{
         width: 48%;
     }
+
 }
 
 /* version de pantallas moviles mas pequeñas */
@@ -206,5 +217,12 @@ img{
 
     .footer__container{
         font-size: 4vw;
+    }
+/* contenedor de detalles de productos */
+    .detalles__productos{
+        font-size:.9rem;
+        gap: 20%;
+        width: 87%;
+        margin-left: 5%;
     }
 }

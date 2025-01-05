@@ -1,3 +1,52 @@
+/* importando fuente principal de google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&display=swap');
+
 *{
-    background-color: gray;
+    /* background-color: gray; */
+
+}
+/* variables de color y fuente */
+:root{
+    --color-principal:#5300C8;
+    --color-secundatio:#03318C;
+    --fuente-principal: 'press start 2p', sans-serif;
+    --fuente-secundaria: 'IBM Plex Mono', monospace;
+}
+
+/* encabezado */
+.encabezado__logo, .encabezado__container{
+    background-color: var(--color-principal);
+}
+
+/* titulos de cada seccion */
+h2{
+    font-family: var(--fuente-principal);
+}
+
+/* ===========================Elementos de main============================== */
+
+/* --contenedor individual de productos--- */
+.productos__item{
+    border: solid 2px var(--color-secundatio);
+    border-radius: .8rem;
+    font-family: var(--fuente-secundaria);
+    background-color: var(--color-principal);
+    color: white;
+}
+
+.detalles__productos{
+    background-color: var(--color-principal);
+
+}
+
+/* contenedor del boton del */
+.boton__producto{
+    background:none;
+    border: hidden;
+}
+
+/* al pasar el cursor sobre el icono de borrar */
+.icono__borrar:hover{
+    cursor: pointer;
+    background-color: rgb(204, 19, 228);
 }
