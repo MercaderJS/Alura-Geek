@@ -1,1 +1,39 @@
-
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Gaming Mouse",
+            "price": 49.99,
+            "description": "High precision gaming mouse with customizable buttons.",
+            "category": "Electronics"
+        },
+        {
+            "id": 2,
+            "name": "Mechanical Keyboard",
+            "price": 89.99,
+            "description": "Durable mechanical keyboard with RGB lighting.",
+            "category": "Electronics"
+        },
+        {
+            "id": 3,
+            "name": "Wireless Headphones",
+            "price": 129.99,
+            "description": "Noise-cancelling wireless headphones with long battery life.",
+            "category": "Electronics"
+        },
+        {
+            "id": 4,
+            "name": "4K Monitor",
+            "price": 399.99,
+            "description": "Ultra HD 4K monitor with vibrant colors and fast refresh rate.",
+            "category": "Electronics"
+        },
+        {
+            "id": 5,
+            "name": "Gaming Chair",
+            "price": 199.99,
+            "description": "Ergonomic gaming chair with adjustable height and recline.",
+            "category": "Furniture"
+        }
+    ]
+}
