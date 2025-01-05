@@ -1,10 +1,6 @@
 /* importando fuente principal de google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&display=swap');
 
-*{
-    /* background-color: gray; */
-
-}
 /* variables de color y fuente */
 :root{
     --color-principal:#5300C8;
@@ -49,4 +45,12 @@ h2{
 .icono__borrar:hover{
     cursor: pointer;
     background-color: rgb(204, 19, 228);
+}
+
+/* =====================footer=============================== */
+
+.footer__container{
+    background-color: var(--color-principal);
+    font-family: var(--fuente-secundaria);
+    color: white;
 }
