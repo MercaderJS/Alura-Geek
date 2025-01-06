@@ -23,7 +23,7 @@ const idBoton = botonBorrar.getAttribute('data-boton-id');
 botonBorrar.addEventListener("click", (evento) => {
     evento.preventDefault();//evita que se recargue la pagina al eliminar el producto
     const borrarProducto = async () => {
-        const url = `https://alura-geek-mcmy.onrender.com/products/${idBoton}`; // URL del recurso a eliminar
+        const url = `https://alura-geek-tn2y.onrender.com/products/${idBoton}`; // URL del recurso a eliminar
         
         try {
             const response = await fetch(url, {
