@@ -20,8 +20,8 @@ const botonBorrar = producto.querySelector("[data-boton-id]");
 const idBoton = botonBorrar.getAttribute('data-boton-id');
 
 // envia un request delete a la API con el id del boton clicado
-botonBorrar.addEventListener("click", (evento) => {
-    evento.preventDefault();//evita que se recargue la pagina al eliminar el producto
+botonBorrar.addEventListener("click", () => {
+
     const borrarProducto = async () => {
         const url = `https://alura-geek-tn2y.onrender.com/products/${idBoton}`; // URL del recurso a eliminar
         
