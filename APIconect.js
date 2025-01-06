@@ -3,7 +3,6 @@
 async function listaProductos() {
     const conexion = await fetch("http://localhost:3001/products");
     const convertirConexion = conexion.json();
-    console.log(convertirConexion);
     
     return convertirConexion;
     

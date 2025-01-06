@@ -1,36 +1,6 @@
 {
   "products": [
     {
-      "id": "7234",
-      "imagen": "./assets/image 2.svg",
-      "nombre": "iwi",
-      "precio": "$12"
-    },
-    {
-      "id": "61ff",
-      "imagen": "./assets/image 2.svg",
-      "nombre": "iwi",
-      "precio": "$12"
-    },
-    {
-      "id": "c1d2",
-      "imagen": "./assets/image 2.svg",
-      "nombre": "wcnw",
-      "precio": "$1"
-    },
-    {
-      "id": "87fb",
-      "imagen": "./assets/image 2.svg",
-      "nombre": "niqdq",
-      "precio": "$12"
-    },
-    {
-      "id": "0f19",
-      "imagen": "./assets/image 2.svg",
-      "nombre": "mcwm",
-      "precio": "$12"
-    },
-    {
       "id": "6f83",
       "imagen": "./assets/image 2.svg",
       "nombre": "wiwixi",
