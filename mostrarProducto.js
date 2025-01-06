@@ -3,7 +3,7 @@ import { APIconect } from "./APIconect.js";
 const lista = document.querySelector("[data-lista-productos]");
 
 
-
+// crea un nuevo li para cada producto
 function nuevoProducto(urlImagen,nombre,precio,id) {
 
     const producto = document.createElement("li");
@@ -15,11 +15,34 @@ function nuevoProducto(urlImagen,nombre,precio,id) {
                             <button class="boton__producto" data-boton-id="${id}"><img src="./assets/Vector.svg" alt="boton para borrar articulo" class="icono__borrar""></button>
                         </div>`
 
-// obtiene el valor del id de elemento y lo añade al boton del boton
+// obtiene el valor del id de elemento y lo añade al boton del elemento 
 const botonBorrar = producto.querySelector("[data-boton-id]");
 const idBoton = botonBorrar.getAttribute('data-boton-id');
-            console.log(idBoton);
+
+// envia un request delete a la API con el id del boton clicado
+botonBorrar.addEventListener("click", (evento) => {
+    evento.preventDefault();//evita que se recargue la pagina al eliminar el producto
+    const borrarProducto = async () => {
+        const url = `http://localhost:3001/product/${idBoton}`; // URL del recurso a eliminar
+        
+        try {
+            const response = await fetch(url, {
+                method: "DELETE",
+            })
+            
+            if (response.ok) {
+                alert("Producto eliminado con éxito.");
+            } else {
+                alert("Error al eliminar el recurso:", error);
+            }
+        } catch (error) {
+            alert("Error al borrar el elemento:");
+        }
+    }
+    borrarProducto();
     
+})
+            
     return producto;
     
 }
@@ -28,33 +51,14 @@ const idBoton = botonBorrar.getAttribute('data-boton-id');
 async function mostrarProducto() {
     try{
     const listaAPI = await APIconect.listaProductos();
-    console.log(listaAPI);
-    
+    // trae al front cada producto en el servidor
     listaAPI.forEach(producto =>lista.appendChild(nuevoProducto(producto.imagen,producto.nombre,producto.precio,producto.id)));
-
-    
 }
-
     catch{
         alert(' mostrarProducto() Ha ocurrido un problema con la conexion :(');
     }
 }
 
-// async function borrarProducto() {
-//     try{
-//         const listaAPI = await APIconect.listaProductos();
-        
-//         listaAPI.forEach(producto =>lista.appendChild(nuevoProducto(producto.imagen,producto.nombre,producto.precio,producto.id)));
-    
-        
-//     }
-    
-//         catch{
-//             alert('Ha ocurrido un problema con la conexion :(');
-//         }
-    
-// }
-// borrarProducto();
 mostrarProducto();
 
 
