@@ -72,9 +72,15 @@ img{
     margin-top: 15%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 45%;
+    justify-content: space-evenly;
     margin-bottom: .3rem;
+    gap: 60%;
+}
+
+/* nombre de cada producto */
+.nombre__producto{
+    font-size: 1rem;
+    padding-left: 5%;
 }
 
 
@@ -202,7 +208,7 @@ img{
 }
 
 /* version de pantallas moviles mas pequeñas */
-@media (min-width: 320px) and (max-width: 479px){
+@media (min-width: 319px) and (max-width: 479px){
     /* logo del footer */
     .encabezado__logo{
         width: 88%;
@@ -213,14 +219,16 @@ img{
         text-align: center;
     }
 
-    .footer__container{
-        font-size: 4vw;
-    }
 /* contenedor de detalles de productos */
     .detalles__productos{
         font-size:.9rem;
         gap: 20%;
         width: 87%;
         margin-left: 5%;
-    }
+}
+
+.footer__container{
+    font-size: 3.5vw;
+
+}
 }

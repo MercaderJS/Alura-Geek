@@ -15,110 +15,24 @@
         <img src="./assets/Logo.svg" alt="Logo de Alura Geek" class="encabezado__logo">
     </header>
 
-    <main class="main__container">
+    <main class="main__container" data-productos>
         <!-- seccion de productos -->
         <section class="productos__container">
             <h2> MIS PRODUCTOS</h2>
-        <ul class="productos__lista">
-            <li class="productos__item">
-            <img src="./assets/image 2.svg" alt="">
-            <p>Producto 1</p>
-            <div class="detalles__productos">
-                <p>$100.00</p>
-                <button class="boton__producto"><img src="./assets/Vector.svg" alt="boton para borrar articulo" class="icono__borrar"></button>
-            </div>
-            </li>
-            <li class="productos__item">
-            <img src="./assets/image 2.svg" alt="">
-            <p>Producto 1</p>
-            <div class="detalles__productos">
-                <p>$100.00</p>
-                <button class="boton__producto"><img src="./assets/Vector.svg" alt="boton para borrar articulo" class="icono__borrar"></button>
-            </div>
-            </li>
-            <li class="productos__item">
-            <img src="./assets/image 2.svg" alt="">
-            <p>Producto 1</p>
-            <div class="detalles__productos">
-                <p>$100.00</p>
-                <button class="boton__producto"><img src="./assets/Vector.svg" alt="boton para borrar articulo" class="icono__borrar"></button>
-            </div>
-            </li>
-            <li class="productos__item">
-            <img src="./assets/image 2.svg" alt="">
-            <p>Producto 1</p>
-            <div class="detalles__productos">
-                <p>$100.00</p>
-                <button class="boton__producto"><img src="./assets/Vector.svg" alt="boton para borrar articulo" class="icono__borrar"></button>
-            </div>
-            </li>
-            <li class="productos__item">
-                <img src="./assets/image 2.svg" alt="">
-                <p>Producto 1</p>
-                <div class="detalles__productos">
-                    <p>$100.00</p>
-                    <button class="boton__producto"><img src="./assets/Vector.svg" alt="boton para borrar articulo" class="icono__borrar"></button>
-                </div>
-                </li>
-                <li class="productos__item">
-                    <img src="./assets/image 2.svg" alt="">
-                    <p>Producto 1</p>
-                    <div class="detalles__productos">
-                        <p>$100.00</p>
-                        <button class="boton__producto"><img src="./assets/Vector.svg" alt="boton para borrar articulo" class="icono__borrar"></button>
-                    </div>
-                    </li>
-                     <li class="productos__item">
-            <img src="./assets/image 2.svg" alt="">
-            <p>Producto 1</p>
-            <div class="detalles__productos">
-                <p>$100.00</p>
-                <button class="boton__producto"><img src="./assets/Vector.svg" alt="boton para borrar articulo" class="icono__borrar"></button>
-            </div>
-            </li>
-            <li class="productos__item">
-                <img src="./assets/image 2.svg" alt="">
-                <p>Producto 1</p>
-                <div class="detalles__productos">
-                    <p>$100.00</p>
-                    <button class="boton__producto"><img src="./assets/Vector.svg" alt="boton para borrar articulo" class="icono__borrar"></button>
-                </div>
-                </li>
-                <li class="productos__item">
-                    <img src="./assets/image 2.svg" alt="">
-                    <p>Producto 1</p>
-                    <div class="detalles__productos">
-                        <p>$100.00</p>
-                        <button class="boton__producto"><img src="./assets/Vector.svg" alt="boton para borrar articulo" class="icono__borrar"></button>
-                    </div>
-                    </li>
-                    <li class="productos__item">
-                        <img src="./assets/image 2.svg" alt="">
-                        <p>Producto 1</p>
-                        <div class="detalles__productos">
-                            <p>$100.00</p>
-                            <button class="boton__producto"><img src="./assets/Vector.svg" alt="boton para borrar articulo" class="icono__borrar"></button>
-                        </div>
-                        </li>
-                        <li class="productos__item">
-                            <img src="./assets/image 2.svg" alt="">
-                            <p>Producto 1</p>
-                            <div class="detalles__productos">
-                                <p>$100.00</p>
-                                <button class="boton__producto"><img src="./assets/Vector.svg" alt="boton para borrar articulo" class="icono__borrar"></button>
-                            </div>
-                            </li>
+            <!-- lista de productos -->
+        <ul class="productos__lista" data-lista-productos>
+
         </ul>
         </section>
 
         <!-- seccion añadir productos -->
         <section class="formulario">
         <h2>AÑADIR PRODUCTO</h2>
-        <form action="" class="input__container">
+        <form action="" class="input__container" data-formulario>
 
-            <input type="text" placeholder="nombre del producto..." class="input">
-            <input type="number" placeholder="precio del producto..." class="input">
-            <input type="url" placeholder="url de imagen del producto" class="input">
+            <input type="text" placeholder="nombre del producto..." class="input" data-nombre-producto>
+            <input type="number" placeholder="precio del producto..." class="input" data-precio-producto>
+            <input type="" placeholder="url de imagen del producto" class="input" data-url-imagen>
             <div class="botones__container">
                 <input type="submit" value="Enviar" class="boton boton__enviar">
                 <input type="reset" value="Limpiar" class="boton">
@@ -136,5 +50,8 @@
             <p>Desarrollado por Enmanuel Segura</p>
         </div>
     </footer>
+    <script src="APIconect.js" type="module"></script>
+    <script src="crearProducto.js" type="module"></script>
+    <script src="mostrarProducto.js" type="module"></script>
 </body>
 </html>
