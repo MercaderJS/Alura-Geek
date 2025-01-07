@@ -32,6 +32,8 @@ botonBorrar.addEventListener("click", () => {
             
             if (response.ok) {
                 alert("Producto eliminado con éxito.");
+                    // Recargara la página actual al borrar el elemento
+                    window.location.href="#";
             } else {
                 alert("Error al borrar el elemto:");
             }
@@ -40,8 +42,7 @@ botonBorrar.addEventListener("click", () => {
         }
     }
     borrarProducto();
-    // Recargara la página actual al borrar el elemento
-    window.location.reload();
+
 })
             
     return producto;
@@ -55,7 +56,7 @@ async function mostrarProducto() {
     // trae al front cada producto en el servidor
     listaAPI.forEach(producto =>lista.appendChild(nuevoProducto(producto.imagen,producto.nombre,producto.precio,producto.id)));
     // Recargara la página actual al agregar un elemento
-    window.location.reload();
+    window.location.href="#";
 }
     catch{
         alert(' mostrarProducto() Ha ocurrido un problema con la conexion :(');
