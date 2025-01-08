@@ -2,7 +2,6 @@ import { APIconect } from "./APIconect.js";
 
 const lista = document.querySelector("[data-lista-productos]");
 
-
 // crea un nuevo li para cada producto
 function nuevoProducto(urlImagen,nombre,precio,id) {
 
@@ -29,7 +28,6 @@ botonBorrar.addEventListener("click", () => {
             const response = await fetch(url, {
                 method: "DELETE",
             })
-            // Recargara la página actual al borrar el elemento
             
             if (response.ok) {
                 alert("Producto eliminado con éxito.");
@@ -58,7 +56,7 @@ async function mostrarProducto() {
 
 }
     catch{
-        alert(' mostrarProducto() Ha ocurrido un problema con la conexion :(');
+        alert('mostrarProducto() Ha ocurrido un problema con la conexion :(');
     }
 }
 

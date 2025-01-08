@@ -17,6 +17,8 @@ async function crearProducto(evento) {
         return;
     }
     await APIconect.crearProducto(urlImagen,nombre,precio);
+    alert("Producto creado con exito");
+    window.location.reload();
     
     
     } //si hay un problema al enviar el video al servidor
