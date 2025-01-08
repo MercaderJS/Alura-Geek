@@ -1,7 +1,7 @@
 // convierte los datos extraidos de la API en formato JSON
 // funcion para conectarse a la lista de productos del servidor
 async function listaProductos() {
-    const conexion = await fetch("http://localhost:3001/products");
+    const conexion = await fetch("https://alura-geek-tn2y.onrender.com/products");
     const convertirConexion = conexion.json();
     
     return convertirConexion;
@@ -10,7 +10,7 @@ async function listaProductos() {
 
 //crea un nuevo producto en el servidor
 async function crearProducto(urlImagen,nombre,precio,id){
-    const conexionPost = await fetch("http://localhost:3001/products", {
+    const conexionPost = await fetch("https://alura-geek-tn2y.onrender.com/products", {
         method:"POST",
         headers:{"Content-type":"application/json"},
         body:JSON.stringify({

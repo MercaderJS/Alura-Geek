@@ -12,7 +12,7 @@ function nuevoProducto(urlImagen,nombre,precio,id) {
                         <p class="nombre__producto">${nombre}</p>
                         <div class="detalles__productos">
                             <p>${precio}</p>
-                            <button class="boton__producto" data-boton-id="${id}"><img src="./assets/Vector.svg" alt="boton para borrar articulo" class="icono__borrar""></button>
+                            <button class="boton__producto" data-boton-id="${id}"><img src="./public/assets/Vector.svg" alt="boton para borrar articulo" class="icono__borrar""></button>
                         </div>`
 
 // obtiene el valor del id de elemento y lo añade al boton del elemento 
@@ -23,7 +23,7 @@ const idBoton = botonBorrar.getAttribute('data-boton-id');
 botonBorrar.addEventListener("click", (evento) => {
     evento.preventDefault();//evita que se recargue la pagina al eliminar el producto
     const borrarProducto = async () => {
-        const url = `http://localhost:3001/product/${idBoton}`; // URL del recurso a eliminar
+        const url = `https://alura-geek-tn2y.onrender.com/products/${idBoton}`; // URL del recurso a eliminar
         
         try {
             const response = await fetch(url, {
