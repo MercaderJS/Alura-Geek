@@ -20,8 +20,8 @@ const botonBorrar = producto.querySelector("[data-boton-id]");
 const idBoton = botonBorrar.getAttribute('data-boton-id');
 
 // envia un request delete a la API con el id del boton clicado
-botonBorrar.addEventListener("click", (evento) => {
-    evento.preventDefault();//evita que se recargue la pagina al eliminar el producto
+botonBorrar.addEventListener("click", () => {
+
     const borrarProducto = async () => {
         const url = `https://alura-geek-tn2y.onrender.com/products/${idBoton}`; // URL del recurso a eliminar
         
@@ -32,15 +32,17 @@ botonBorrar.addEventListener("click", (evento) => {
             
             if (response.ok) {
                 alert("Producto eliminado con éxito.");
+                    // Recargara la página actual al borrar el elemento
+                    window.location.href="#";
             } else {
-                alert("Error al eliminar el recurso:", error);
+                alert("Error al borrar el elemto:");
             }
         } catch (error) {
             alert("Error al borrar el elemento:");
         }
     }
     borrarProducto();
-    
+
 })
             
     return producto;
@@ -53,6 +55,8 @@ async function mostrarProducto() {
     const listaAPI = await APIconect.listaProductos();
     // trae al front cada producto en el servidor
     listaAPI.forEach(producto =>lista.appendChild(nuevoProducto(producto.imagen,producto.nombre,producto.precio,producto.id)));
+    // Recargara la página actual al agregar un elemento
+    window.location.href="#";
 }
     catch{
         alert(' mostrarProducto() Ha ocurrido un problema con la conexion :(');
