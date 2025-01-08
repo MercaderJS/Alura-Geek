@@ -71,7 +71,7 @@ img{
     padding-left: .86%;
     padding-top: .86%;
     margin-bottom:10%;
-    height: 210px;
+    height: 270px;
     position: relative;
 }
 
@@ -231,9 +231,10 @@ img{
 
 /* contenedor de detalles de productos */
 .productos__item{
-    height: 180px
+    height: 180px;
 }
-    .detalles__productos{
+
+.detalles__productos{
         font-size:.9rem;
         gap: 60%;
         width: 87%;
