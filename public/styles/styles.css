@@ -75,11 +75,25 @@ h2{
     font-family: var(--fuente-secundaria);
     font-size: 1.5rem;
     font-weight:200;
+    
 }
 
+
+
 .boton__enviar{
+    cursor: pointer;
     color: white;
     background-color: var(--color-secundatio);
+}
+
+.boton__limpiar:hover{
+    cursor: pointer;
+    background-color: white;
+}
+
+.boton__enviar:hover{
+    color: gray;
+    background-color:#1e56c7;
 }
 
 /* =====================footer=============================== */

@@ -1,10 +1,3 @@
 {
-  "products": [
-    {
-      "id": "0322",
-      "imagen": "./public/assets/image 2.svg",
-      "nombre": "mkdm k",
-      "precio": "$12"
-    }
-  ]
+  "products": []
 }

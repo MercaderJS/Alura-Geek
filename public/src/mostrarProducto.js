@@ -29,11 +29,11 @@ botonBorrar.addEventListener("click", () => {
             const response = await fetch(url, {
                 method: "DELETE",
             })
+            // Recargara la página actual al borrar el elemento
             
             if (response.ok) {
                 alert("Producto eliminado con éxito.");
-                    // Recargara la página actual al borrar el elemento
-                    window.location.href="#";
+                window.location.reload();
             } else {
                 alert("Error al borrar el elemto:");
             }
@@ -55,8 +55,7 @@ async function mostrarProducto() {
     const listaAPI = await APIconect.listaProductos();
     // trae al front cada producto en el servidor
     listaAPI.forEach(producto =>lista.appendChild(nuevoProducto(producto.imagen,producto.nombre,producto.precio,producto.id)));
-    // Recargara la página actual al agregar un elemento
-    window.location.href="#";
+
 }
     catch{
         alert(' mostrarProducto() Ha ocurrido un problema con la conexion :(');
