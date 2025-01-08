@@ -18,6 +18,13 @@
 /*==============================contenido principal======================================= */
 
 /* contenedor de productos y formulario */
+
+/* div para copiar url */
+.area__url{
+    margin: 2rem 10px;
+    font-size: .8rem;
+    padding:2% 2% 2%;
+}
 .main__container{
     display: flex;
     flex-direction: row;
@@ -64,17 +71,20 @@ img{
     padding-left: .86%;
     padding-top: .86%;
     margin-bottom:10%;
-    height: auto;    
+    height: 210px;
+    position: relative;
 }
 
 /* descripcion de los productos */
 .detalles__productos{
-    margin-top: 15%;
+    width:95%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     margin-bottom: .3rem;
-    gap: 60%;
+    gap: 70%;
+    position: absolute;
+    bottom:0px;
 }
 
 /* nombre de cada producto */
@@ -208,7 +218,7 @@ img{
 }
 
 /* version de pantallas moviles mas pequeñas */
-@media (min-width: 319px) and (max-width: 479px){
+@media (min-width: 270px) and (max-width: 479px){
     /* logo del footer */
     .encabezado__logo{
         width: 88%;
@@ -220,9 +230,12 @@ img{
     }
 
 /* contenedor de detalles de productos */
+.productos__item{
+    height: 180px
+}
     .detalles__productos{
         font-size:.9rem;
-        gap: 20%;
+        gap: 60%;
         width: 87%;
         margin-left: 5%;
 }
